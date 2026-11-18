@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: Controller Seal Timer
+## Notes: Counts your paladin seal from the moment you cast it and shows the seconds left on that spell's controller button.
+## Author: marqswb
+## Version: 1.0.0
+## SavedVariables: ControllerSealTimerDB
+## OptionalDeps: Blizzard_GamepadActionBars
+## Category: Buffs & Debuffs
+
+ControllerSealTimer.lua
