@@ -361,8 +361,9 @@ local function PaintButton(button)
 		return
 	end
 	PlaceOverlay(button, holder)
-	holder.text:SetText(tostring(math.ceil(left)))
-	if left <= WARN_SECONDS then
+	local seconds = math.floor(left)
+	holder.text:SetText(tostring(seconds))
+	if seconds <= WARN_SECONDS then
 		holder.text:SetTextColor(1, 0.25, 0.25, 1)
 	else
 		holder.text:SetTextColor(1, 0.95, 0.7, 1)
@@ -412,7 +413,7 @@ local function StatusText()
 	local left = Remaining()
 	local count = #buttons
 	if left and active then
-		return string.format("%s, %ds left, %d controller button(s) found.", active.name, math.ceil(left), count)
+		return string.format("%s, %ds left, %d controller button(s) found.", active.name, math.floor(left), count)
 	end
 	return string.format("No seal running. %d controller button(s) found. Cast a seal, or /cst test.", count)
 end

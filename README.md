@@ -36,7 +36,7 @@ Start the game fully after the first copy. `/reload` is not enough the first tim
 2. `/cst test` paints a countdown on the first visible controller button that has a spell.
 3. `/cst test Seal of Righteousness` paints it only on the button showing that spell. The seal has to already be on a controller button.
 4. `/cst debug` lists every visible controller button and the spell on it. If this says 0 buttons, the gamepad bars were not found.
-5. Cast Seal of Righteousness (or any other seal). The number on its icon counts down from 30. Under 5 seconds it turns red.
+5. Cast Seal of Righteousness (or any other seal). The icon follows the game's buff timer, so the first number is 29 and it turns red at 5. The seal still lasts 30 seconds. The game just doesn't show the opening 30.
 
 ## Commands
 
